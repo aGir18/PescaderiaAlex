@@ -14,16 +14,3 @@ public class Tienda {
 		this.clientes = clientes;
 	}
 }
-
-//public Turno darTurno(Cliente clienteParaTurno, int numeroInicial) {
-//	clienteParaTurno.setTurno(new Turno(numeroInicial));
-//	return clienteParaTurno.getTurno();
-//}
-
-//public void turnosTodaLaTienda(int numeroInicial) {
-//	for (Cliente cliente : clientes) {
-//		this.darTurno(cliente, numeroInicial);
-//		System.out.println("El turno de " + cliente + " es el " + cliente.getTurno());
-//		numeroInicial++;
-//	}
-//}

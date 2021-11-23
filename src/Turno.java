@@ -21,11 +21,14 @@ public class Turno {
 	public int primerTurnoAleatorio() {
 			int valorDado = (int) Math.floor(Math.random()*100);
 			setValor(valorDado);
-//			System.out.println("Probando turno = " + getValor());
 		return getValor();
 	}
 	
-//	public int turnoSiguiente() {}
+//	public Cliente turnoSiguiente() {
+//			
+//		
+//		return Cliente cliente = new Cliente("Pepe");
+//	}
 	
 	public Turno() {
 		primerTurnoAleatorio();
