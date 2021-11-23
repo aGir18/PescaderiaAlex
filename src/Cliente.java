@@ -6,6 +6,10 @@ public class Cliente {
 	public void setTurno(Turno turno) {
 		this.turno = turno;
 	}
+	
+	public void setNumeroTurno(int numeroTurno) {
+		this.turno.setValor(numeroTurno);
+	}
 
 	public Turno getTurno() {
 		return turno;
@@ -15,6 +19,15 @@ public class Cliente {
 		return nombre;
 	}
 
+	public void turnoSiguiente(Cliente clienteAnterior) {
+		int iniciando = 0;
+		if (clienteAnterior.getTurno() != null) {
+			this.setNumeroTurno(clienteAnterior.getTurno().turnoSiguiente()); 
+		} else {
+			this.setNumeroTurno(iniciando);
+		}
+	}
+		
 	public Cliente(String nombre) {
 		this.nombre = nombre;
 	}
@@ -24,3 +37,9 @@ public class Cliente {
 		return nombre;
 	}
 }
+
+
+//public int turnoSiguiente(Turno turnoAnterior) {
+//		this.turno.valor = turnoAnterior.turnoSiguiente();
+//	return turno.valor + 1;
+//}

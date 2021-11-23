@@ -24,11 +24,9 @@ public class Turno {
 		return getValor();
 	}
 	
-//	public Cliente turnoSiguiente() {
-//			
-//		
-//		return Cliente cliente = new Cliente("Pepe");
-//	}
+	public int turnoSiguiente() {
+		return ++valor;
+	}
 	
 	public Turno() {
 		primerTurnoAleatorio();
